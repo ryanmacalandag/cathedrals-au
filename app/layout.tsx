@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Alegreya } from 'next/font/google'
+import NavMain from "./components/NavMain";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const fontSerif = Alegreya({
+  subsets: ['latin'],
+  variable: '--font-serif',
 });
 
 export const metadata: Metadata = {
@@ -24,10 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={fontSerif.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="w-full h-dvh min-h-dvh font-serif bg-stone-100"
       >
+        <NavMain></NavMain>
         {children}
       </body>
     </html>
