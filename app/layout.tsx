@@ -1,12 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Alegreya } from 'next/font/google'
 import NavMain from "./components/NavMain";
-
-const fontSerif = Alegreya({
+import { Noto_Sans, Roboto_Mono, Literata } from 'next/font/google'
+ 
+const sans = Noto_Sans({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+})
+
+const serif = Literata({
+  subsets: ['latin'],
+  display: 'optional',
   variable: '--font-serif',
-});
+})
+ 
+const mono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mono',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={fontSerif.className}>
-      <body
-        className="w-full h-dvh min-h-dvh font-serif bg-stone-100"
+    <html lang="en" className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
+      <body 
+        className="relative w-full h-dvh min-h-dvh font-serif bg-stone-100"
       >
         <NavMain></NavMain>
         {children}
