@@ -84,7 +84,7 @@ export default function Quiz( randomquiz: QuestionType[] ) {
                     handleOptionClick(button.iscorrect)
                   }}
                 >
-                  <div className='capitalize'>{button.name}</div>
+                  <div className='capitalize font-sans font-semibold pr-3'>{button.name}</div>
                 </div>
               ))}
             </div>
