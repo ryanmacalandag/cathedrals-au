@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import cathedralIcon from '../assets/icons/church-religion-svgrepo-com.svg';
 import Link from 'next/link';
 
 const NavSubtle = () => {
