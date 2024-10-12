@@ -73,12 +73,12 @@ export default function Quiz( randomquiz: QuestionType[] ) {
             />
             
             <div
-              className='w-full grid grid-cols-2 gap-2'
+              className='w-full grid grid-cols-2 gap-2 my-4'
               aria-label="quiz choices"
             >
               {quiz[currentQuestion].options.map((button,key) => (
                 <div
-                  className="cold-span-2 md:col-span-1 flex justify-between items-center gap-4 p-4 border border-stone-600/30 group-data-[checked]:bg-stone-700 has-[:checked]:bg-indigo-50 hover:bg-stone-700/15 rounded-lg transition duration-300"
+                  className="col-span-2 md:col-span-1 flex justify-between items-center gap-4 p-4 border border-stone-600/30 group-data-[checked]:bg-stone-700 has-[:checked]:bg-indigo-50 hover:bg-stone-700/15 rounded-lg transition duration-300"
                   key={key}
                   onClick={() => {
                     handleOptionClick(button.iscorrect)

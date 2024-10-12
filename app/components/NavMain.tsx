@@ -9,7 +9,7 @@ const NavMain = () => {
     <div className='fixed z-50 w-full flex flex-row justify-between items-center bg-teal-950 text-white'>
 
       <div className='px-4 md:px-6 xl:px-8'>
-        <Link href={'/'} className='flex flex-row items-center gap-2 text-white text-xl transition duration-300' >
+        <Link href={'/'} className='flex flex-row items-center gap-2 text-white text-base md:text-xl transition duration-300' >
           <Image
             src={cathedralIcon}
             alt='cathedral icon'
