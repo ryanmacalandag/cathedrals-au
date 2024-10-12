@@ -17,6 +17,10 @@ const config: Config = {
         serif: ['var(--font-serif)'],
         mono: ['var(--font-mono)'],
       },
+      backgroundImage: {
+        'paper-texture': "url('/static//bg/seamless_paper_texture.png')",
+        'fabric': "url('/static/bg/45degreee_fabric.png')",
+      },
     },
   },
   plugins: [],

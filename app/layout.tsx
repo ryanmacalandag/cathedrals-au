@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavMain from "./components/NavMain";
-import { Noto_Sans, Roboto_Mono, Literata } from 'next/font/google'
+import { Noto_Sans, Roboto_Mono, Literata } from 'next/font/google';
  
 const sans = Noto_Sans({
   subsets: ['latin'],
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
       <body 
-        className="relative w-full h-dvh min-h-dvh font-serif bg-stone-100"
+        className="relative w-full h-dvh min-h-dvh font-serif bg-paper-texture"
       >
         <NavMain></NavMain>
         {children}
