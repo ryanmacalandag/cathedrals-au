@@ -17,7 +17,7 @@ export default function CathedralsGallery() {
             cathedrals.map((cathedral,key) => {
               return (
                 <div key={key} className="col-span-3 flex flex-col gap-2 mb-2">
-                  <div>
+                  <div >
                     <Image
                       src={cathedral.img}
                       alt={cathedral.name}

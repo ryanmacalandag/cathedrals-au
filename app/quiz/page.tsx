@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <NavSubtle></NavSubtle>
-      <div className="relative w-full">
+      <div className="w-full">
         <div className="w-full max-w-screen-md mx-auto px-4 md:px-20 py-12 flex justify-center items-center">
           <Quiz {...randCathedrals} />
         </div>

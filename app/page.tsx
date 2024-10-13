@@ -13,7 +13,7 @@ export default function Home() {
           <p></p>
           <div className="text-4xl sm:text-5xl lg:text-6xl text-center md:text-center text-balance text-orange-950 font-normal tracking-tighter italic"><span className="italic font-extralight">How well </span>do you know the Catholic Cathedrals in Australia?</div>
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
-            <Link href={"/cathedrals"} className="w-fit md:w-fit flex flex-row gap-3 md:gap-3 justify-between items-center uppercase font-sans text-xs sm:text-sm text-teal-900 font-bold tracking-widest px-6 lg:px-8 py-3 lg:py-5 border-2 border-teal-900 rounded-full bg-transparent hover:bg-teal-600/10 transition duration-300">
+            <Link href={"/cathedrals"} className="w-fit md:w-fit flex flex-row gap-3 md:gap-3 justify-between items-center uppercase font-sans text-xs sm:text-sm text-yellow-50 hover:text-teal-900 font-bold tracking-widest px-6 lg:px-8 py-3 lg:py-5 border-2 border-teal-900 rounded-full bg-teal-900 hover:bg-transparent transition duration-300">
               <BiGridAlt></BiGridAlt>
               Browse Cathedrals
             </Link>

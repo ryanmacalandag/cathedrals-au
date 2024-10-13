@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='scroll-smooth snap-y snap-proximity scroll-pt-12'>
       <body 
-        className="w-full h-full flex flex-col justify-between min-h-dvh font-serif bg-paper-texture"
+        className="relative w-full h-full flex flex-col justify-between min-h-dvh font-serif bg-paper-texture"
       >
         {children}
       </body>

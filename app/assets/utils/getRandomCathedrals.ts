@@ -11,7 +11,7 @@ export type QuestionType =
   };
 
 export function getRandomCathedrals() {
-  const quiz: QuestionType[] = [];
+  let quiz: QuestionType[] = [];
 
   const allShuffled = arrayShuffle(Cathedrals);
   const shuffledCorrectItems = allShuffled.slice(0,MAX_QUIZ_ITEMS);
@@ -23,7 +23,7 @@ export function getRandomCathedrals() {
     const createoptions = [ tempCorrect, ...wrongitems ]
     tempQuestion.question = correct.img;
     tempQuestion.options = arrayShuffle(createoptions);
-    quiz.push(tempQuestion);
+    quiz = [tempQuestion, ...quiz];
   })
   // console.log(quiz)
   // console.dir(quiz, { depth: null });

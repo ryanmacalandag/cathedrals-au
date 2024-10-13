@@ -15,7 +15,6 @@ export default function Quiz( randomquiz: QuestionType[] ) {
   const [ currentQuestion, setCurrentQuestion ] = useState(0);
   const [ score, setScore ] = useState(0);
   const [ quizEnd, setQuizEnd ] = useState(false);
-  const [ magnify, setMagnify ] = useState(false);
 
   function handleOptionClick(isCorrect:boolean) {
 
@@ -62,18 +61,16 @@ export default function Quiz( randomquiz: QuestionType[] ) {
             <div className='w-full text-sm'>
               <p>{currentQuestion + 1}/{MAX_QUIZ_ITEMS}</p>
             </div>
-            <div onClick={() => { setMagnify(magnify => !magnify) }} className={ magnify ? 'absolute z-[100] top-0 left-0 w-full h-full max-h-dvh flex justify-center items-center p-4 md:p-16 bg-teal-950/90 cursor-zoom-out' : 'w-full aspect-video cursor-zoom-in border-8 border-stone-100 shadow-2xl overflow-hidden'}>
-              <Image
-                src={quiz[currentQuestion].question}
-                alt={quiz[currentQuestion].question}
-                width={600}
-                height={500}
-                style={{
-                  objectFit: 'cover',
-                }}
-                className="w-full min-w-screen h-full"
-              />
-            </div>
+            <Image
+              src={quiz[currentQuestion].question}
+              alt={quiz[currentQuestion].question}
+              width={600}
+              height={500}
+              style={{
+                objectFit: 'cover',
+              }}
+              className="w-full min-w-full aspect-video border-8 border-stone-100 shadow-2xl hover:scale-105 transition duration-300"
+            />
             
             <div
               className='w-full grid grid-cols-2 gap-2 my-4'
