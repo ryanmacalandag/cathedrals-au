@@ -35,7 +35,7 @@ export default function Quiz( randomquiz: QuestionType[] ) {
     <>
       {
         quizEnd ? (
-          <div className='flex flex-col items-center justify-center gap-6'>
+          <div className='h-3/5 flex flex-col items-center justify-center gap-6'>
 
             <div className='flex flex-col gap-4 text-center'>
               <div className='text-2xl tracking-tight'>
@@ -48,7 +48,7 @@ export default function Quiz( randomquiz: QuestionType[] ) {
                 </p>
                 <p>You scored {score} out of { MAX_QUIZ_ITEMS }.</p>
               </div>
-              <Link href={"/"} className="w-full md:w-fit flex flex-row gap-6 justify-between items-center uppercase font-sans text-sm text-white font-bold tracking-widest px-8 py-6 my-4 rounded bg-teal-800 hover:bg-teal-600 transition duration-300">
+              <Link href={"/"} className="w-full md:w-fit flex flex-row gap-3 justify-between items-center uppercase font-sans text-sm text-white font-bold tracking-widest px-8 py-6 my-4 rounded bg-teal-800 hover:bg-teal-600 transition duration-300">
                 <HomeIcon></HomeIcon>
                 Back to Home
               </Link>
