@@ -6,9 +6,10 @@ export default function CathedralsGallery() {
   const cathedrals = Cathedrals;
 
   return (
-    <div className='w-full flex flex-col gap-4'>
-      <div>
+    <div className='w-full flex flex-col gap-4 md:gap-8 xl:gap-8'>
+      <div className='w-full px-4 md:px-6 py-4 bg-orange-900/10'>
         {/* filter bar */}
+        <div>Filter</div>
       </div>
       <div>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-9 gap-4">

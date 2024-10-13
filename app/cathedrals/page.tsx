@@ -1,5 +1,6 @@
 // import Quiz from "../components/quiz/Quiz";
 
+import Footer from "../components/Footer";
 import CathedralsGallery from "../components/gallery/CathedralsGallery";
 import NavSubtle from "../components/NavSubtle";
 
@@ -16,6 +17,7 @@ export default function Page() {
           <CathedralsGallery></CathedralsGallery>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }

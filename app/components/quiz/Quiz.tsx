@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 import { QuestionType } from './getRandomCathedrals';
 import Link from 'next/link';
-import { HomeIcon } from '@radix-ui/react-icons';
+import { BiHome } from 'react-icons/bi';
 
 const MAX_QUIZ_ITEMS = 10;
 
@@ -49,7 +49,7 @@ export default function Quiz( randomquiz: QuestionType[] ) {
                 <p>You scored {score} out of { MAX_QUIZ_ITEMS }.</p>
               </div>
               <Link href={"/"} className="w-full md:w-fit flex flex-row gap-3 justify-between items-center uppercase font-sans text-sm text-white font-bold tracking-widest px-8 py-6 my-4 rounded bg-teal-800 hover:bg-teal-600 transition duration-300">
-                <HomeIcon></HomeIcon>
+                <BiHome></BiHome>
                 Back to Home
               </Link>
             </div>

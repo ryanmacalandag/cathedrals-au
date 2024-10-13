@@ -12,9 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className=''>
+    <html lang="en" className='scroll-smooth snap-y snap-proximity scroll-pt-12'>
       <body 
-        className="relative w-full h-dvh min-h-dvh font-serif bg-paper-texture"
+        className="w-full h-full flex flex-col justify-between min-h-dvh font-serif bg-paper-texture"
       >
         {children}
       </body>

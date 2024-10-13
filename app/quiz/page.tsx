@@ -3,6 +3,7 @@
 import NavSubtle from "../components/NavSubtle";
 import { getRandomCathedrals } from "../components/quiz/getRandomCathedrals";
 import Quiz from "../components/quiz/Quiz";
+import Footer from "../components/Footer";
 
 export default function Page() {
 
@@ -16,6 +17,7 @@ export default function Page() {
           <Quiz {...randCathedrals} />
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
