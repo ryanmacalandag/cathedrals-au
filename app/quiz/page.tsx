@@ -1,7 +1,7 @@
 // import Quiz from "../components/quiz/Quiz";
 
 import NavSubtle from "../components/NavSubtle";
-import { getRandomCathedrals } from "../components/quiz/getRandomCathedrals";
+import { getRandomCathedrals } from "../assets/utils/getRandomCathedrals";
 import Quiz from "../components/quiz/Quiz";
 import Footer from "../components/Footer";
 

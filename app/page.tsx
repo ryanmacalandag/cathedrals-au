@@ -17,7 +17,7 @@ export default function Home() {
               <BiGridAlt></BiGridAlt>
               Browse Cathedrals
             </Link>
-            <Link href={"/quiz"} className="w-fit md:w-fit flex flex-row gap-3 md:gap-3 justify-between items-center uppercase font-sans text-sm text-yellow-50 font-bold tracking-widest px-6 lg:px-8 py-3 lg:py-5 rounded-full bg-teal-800 hover:bg-teal-600 transition duration-300">
+            <Link href={"/quiz"} className="w-fit md:w-fit flex flex-row gap-3 md:gap-3 justify-between items-center uppercase font-sans text-xs sm:text-sm text-teal-900 font-bold tracking-widest px-6 lg:px-8 py-3 lg:py-5 border-2 border-teal-900 rounded-full bg-transparent hover:bg-teal-600/10 transition duration-300">
               Start quiz
               <BiRightArrowAlt></BiRightArrowAlt>
             </Link>

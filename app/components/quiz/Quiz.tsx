@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
-import { QuestionType } from './getRandomCathedrals';
+import { QuestionType } from '../../assets/utils/getRandomCathedrals';
 import Link from 'next/link';
 import { BiHome } from 'react-icons/bi';
 
